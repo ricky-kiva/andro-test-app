@@ -108,3 +108,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 // @Test annotation let JUnit know that the function is a test case
 // assertion like 'assertEquals' should be added inside the function test case, to assert the desired result & actual result
 // --- assertEquals("Wed, 28 Feb 2018", Utils.toSimpleString(date))
+
+// User Test includes:
+// - UI: Visual Media that interacts with user (label, button, radiobutton, etc)
+// - As the test goes, 'property' of aN UI will define the 'state' of the component
+// - Automatic UI test could give 'input' & 'event' to a component such click(), pressKey(), etc
+// - This test focus on the 'difference' between the 'carried process' & the 'result' in the 'scenario of usage'
+// - Automatic UI Test depends on the technology (framework/tools) that's being used
+
+// Espresso: is a  'testing' 'framework' in 'Android Testing Support Library' that provides a 'set of API' for user to 'write test code' & 'simulate the test'
+// 3 main components of Espresso:
+// - ViewMatchers ( onView(ViewMatcher) ): 'Find UI' element that's being tested
+// - ViewActions ( perform(ViewAction) ): 'Give event' to 'do action' for UI element in test
+// - ViewAssertions: checks the 'state' of tested component
+// --- example: onView() -> performClick() -> verify()
